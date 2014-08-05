@@ -36,6 +36,7 @@ when 'rhel'
       description "Updated erlang yum repository for RedHat / Centos 5.x - #{node['kernel']['machine']}"
       baseurl 'http://repos.fedorapeople.org/repos/peter/erlang/epel-5Server/$basearch'
       gpgcheck false
+      sslverify false
       action :create
     end
 
